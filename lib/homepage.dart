@@ -15,8 +15,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         bottom: TabBar(tabs: [
-          Tab(icon: Icon(Icons.gamepad), text: 'Games'),
-          Tab(icon: Icon(Icons.apps), text: 'Apps')
+          const Tab(icon: Icon(Icons.gamepad), text: 'Games'),
+          const Tab(icon: Icon(Icons.apps), text: 'Apps')
         ]),
         actions: [
           IconButton(
@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
           ),
           CircleAvatar(
             child: Image.asset('assets/ani.jpg'),
+            // D:\PlayStorepage\assets\ani.jpg
           ),
         ],
         leading: IconButton(
